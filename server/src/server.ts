@@ -6,6 +6,7 @@ const prisma = new PrismaClient()
 
 app.get('/users', async () => {
   const users = await prisma.user.findMany()
+
   return users
 })
 
@@ -14,5 +15,5 @@ app
     port: 3333,
   })
   .then(() => {
-    console.log('Server running on port http://localhost:3333')
+    console.log('🚀 HTTP server running on port http://localhost:3333')
   })
