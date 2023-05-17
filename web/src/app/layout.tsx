@@ -1,31 +1,29 @@
 import './globals.css'
+import { ReactNode } from 'react'
 import {
   Roboto_Flex as Roboto,
-  Bai_Jamjuree as BaiJamjuree
+  Bai_Jamjuree as BaiJamjuree,
 } from 'next/font/google'
 
 const roboto = Roboto({ subsets: ['latin'], variable: '--font-roboto' })
+
 const baiJamjuree = BaiJamjuree({
   subsets: ['latin'],
   weight: '700',
-  variable: '--font-bai-jamjuree'
+  variable: '--font-bai-jamjuree',
 })
 
 export const metadata = {
   title: 'Timeline',
   description:
-    'Uma cápsula do tempo construida com React, Next.js, TailwindCSS e TypeScript.'
+    'Uma cápsula do tempo construída com React, Next.js, TailwindCSS e Typescript.',
 }
 
-export default function RootLayout({
-  children
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="pt-BR">
       <body
-        className={`${roboto.variable} ${baiJamjuree.variable}} font-sans bg-gray-900 text-gray-100`}
+        className={`${roboto.variable} ${baiJamjuree.variable} bg-gray-900 font-sans text-gray-100`}
       >
         {children}
       </body>
