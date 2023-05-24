@@ -1,6 +1,5 @@
 import { getUser } from '@/lib/auth'
 import Image from 'next/image'
-import Link from 'next/link'
 import { XIcon } from 'lucide-react'
 
 export function Profile() {
@@ -18,9 +17,9 @@ export function Profile() {
 
       <p className="max-w-[140px] text-sm leading-snug">
         {name}
-        <Link href="/api/auth/logout">
+        <a href="/api/auth/logout">
           <XIcon className="ml-1 inline-block h-5 w-5 text-red-600 transition-colors hover:text-red-400" />
-        </Link>
+        </a>
       </p>
     </div>
   )
