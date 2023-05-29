@@ -37,7 +37,7 @@ export default async function Home() {
   }
 
   return (
-    <div className="flex flex-col gap-10 p-8">
+    <div className="flex max-h-screen flex-col gap-10 overflow-y-scroll p-8 lg:max-h-full lg:overflow-y-hidden">
       {memories.map((memory) => (
         <div key={memory.id} className="space-y-4">
           <time className="-ml-8 flex items-center gap-2 text-sm text-gray-100 before:h-px before:w-5 before:bg-gray-50">
@@ -53,6 +53,8 @@ export default async function Home() {
           <p className="text-lg leading-relaxed text-gray-100">
             {memory.excerpt}
           </p>
+
+          {/* TODO: Fazer a página Ler Mais */}
 
           <Link
             href={`/memories/${memory.id}`}
