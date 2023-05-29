@@ -17,6 +17,8 @@ interface MemoryProps {
   createdAt: string
 }
 
+// TODO: The action 'NAVIGATE' with payload {"name":"index"} was not handled by any navigator
+
 dayjs.locale(ptBR)
 
 export default function Memories() {
