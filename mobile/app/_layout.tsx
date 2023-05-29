@@ -56,7 +56,6 @@ export default function Layout() {
         }}
       >
         <Stack.Screen name="index" redirect={isUserAuthenticated} />
-        {/* TODO: Alterar ordem depois de finalizado */}
         <Stack.Screen name="memories" />
         <Stack.Screen name="new" />
       </Stack>

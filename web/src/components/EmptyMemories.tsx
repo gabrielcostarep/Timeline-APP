@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export function EmptyMemories() {
   return (
-    <div className="flex flex-1 items-center justify-center p-16 lg:-mt-72">
+    <div className="flex flex-1 items-center justify-center p-16 lg:min-h-[calc(100vh-5rem)]">
       <p className="w-[360px] text-center leading-relaxed">
         Você ainda não registrou nenhuma lembrança, comece a{' '}
         <Link href="/memories/new" className="underline hover:text-gray-50">

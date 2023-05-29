@@ -36,9 +36,9 @@ export default function RootLayout({ children }: { children: ReactNode }) {
       >
         <main className="grid min-h-screen grid-cols-2 lg:grid-cols-1">
           {/* Left column */}
-          <section className="border-white-10 relative flex flex-col items-start justify-between overflow-hidden border-r  bg-[url('../assets/bg-stars.svg')] bg-cover px-28 py-16 lg:h-20 lg:flex-row lg:items-center lg:justify-evenly lg:p-4">
+          <section className="border-white-10 relative flex flex-col items-start justify-between overflow-hidden border-r  bg-[url('../assets/bg-stars.svg')] bg-cover px-28 py-16 lg:h-20 lg:flex-row lg:items-center lg:justify-evenly lg:overflow-hidden lg:border-none lg:p-0">
             {/* Blur */}
-            <div className="absolute right-0 top-1/2 h-[288px] w-[526px] -translate-y-1/2 translate-x-1/2 rounded-full bg-purple-700 opacity-50 blur-full" />
+            <div className="absolute right-0 top-1/2 -z-10 h-[288px] w-[526px] -translate-y-1/2 translate-x-1/2 rounded-full bg-purple-700 opacity-50 blur-full lg:w-full" />
 
             {/* Stripes */}
             <div className="absolute bottom-0 right-2 top-0 w-2 bg-stripes" />

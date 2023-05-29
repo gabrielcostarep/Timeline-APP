@@ -20,8 +20,8 @@ export function Hero() {
 
       <Link
         href="/memories/new"
-        className="inline-block rounded-full bg-green-500 px-5 py-3 font-alt uppercase leading-none text-black transition-colors hover:bg-green-600
-        lg:justify-end lg:p-2 lg:text-sm"
+        className="inline-block rounded-full bg-green-500 px-5 py-3 font-alt uppercase leading-none text-black transition-colors
+          hover:bg-green-600 lg:text-sm sm:p-2"
       >
         <p className="sm:hidden">Cadastrar Lembranças</p>
         <Plus className="hidden sm:inline-block" />
