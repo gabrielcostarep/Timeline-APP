@@ -1,5 +1,5 @@
-# 📅 Timeline App
-## Projeto realizado durante o NLW Spacetime.
+## 📅 Timeline App
+Projeto realizado durante o NLW Spacetime.
 
 <br />
 
@@ -7,6 +7,8 @@
 <div align="center" >
   <img src="./Readme-mobile-gif.gif" alt="demo-mobile" height="500em">
 </div>
+
+<br />
 
 ### Versão web
 <div align="center" >
