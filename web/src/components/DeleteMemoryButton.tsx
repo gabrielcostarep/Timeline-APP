@@ -14,13 +14,15 @@ export function DeleteMemoryButton({
   const router = useRouter()
 
   async function deleteMemory() {
-    await api.delete(`/memories/${id}`, {
-      headers: {
-        Authorization: `Bearer ${token}`,
-      },
-    })
-
-    router.push('/')
+    await api
+      .delete(`/memories/${id}`, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+      })
+      .then(() => {
+        router.refresh()
+      })
   }
 
   return (

@@ -31,21 +31,23 @@ export function NewMemoryForm() {
 
     const token = Cookie.get('token')
 
-    await api.post(
-      '/memories',
-      {
-        coverUrl,
-        content: formData.get('content'),
-        isPublic: formData.get('isPublic'),
-      },
-      {
-        headers: {
-          Authorization: `Bearer ${token}`,
+    await api
+      .post(
+        '/memories',
+        {
+          coverUrl,
+          content: formData.get('content'),
+          isPublic: formData.get('isPublic'),
         },
-      },
-    )
-
-    router.push('/')
+        {
+          headers: {
+            Authorization: `Bearer ${token}`,
+          },
+        },
+      )
+      .then(() => {
+        router.push('/')
+      })
   }
 
   return (
